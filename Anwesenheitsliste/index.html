@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Simon Nikolaidis" />
+    <meta name="date" content="24.02.2022" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Anwesenheit Hauptberufliche Dozenten</title>
+  </head>
+  <header>
+    <img src="ba-leipzig.png" alt="Logo der Berufsakademie Sachsen" />
+    <h1>Anwesenheit Mitarbeiter</h1>
+  </header>
+  <body>
+    <div id="wrapper">
+      <div id="Anwesenheitsliste">
+        <div id="wochenleiste">
+          <button id="zurueck" class="wochenbuttons">zurück</button>
+          <p id="datumWoche">04.01.2021 - 09.01.2021 (Kalenderwoche 1)</p>
+          <button id="vor" class="wochenbuttons">vor</button>
+        </div>
+        <div id="TabelleDiv">
+          <table id="anwesenheitTabelle">
+            <tr>
+              <th>Dozent</th>
+              <th>Montag</th>
+              <th>Dienstag</th>
+              <th>Mittwoch</th>
+              <th>Donnerstag</th>
+              <th>Freitag</th>
+            </tr>
+            <tr>
+              <th>Herr Prof. Brunner</th>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td class="tabelleRot">Heimarbeit</td>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+            </tr>
+            <tr>
+              <th>Frau Prof. Schneider</th>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td class="tabelleRot">Urlaub</td>
+              <td class="tabelleRot">Urlaub</td>
+            </tr>
+            <tr>
+              <th>Herr Prof. Siegmund</th>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+              <td>Lehre/Büro</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Legende">
+        <div id="ueberschriftLegende">
+          <h5 style="margin-left: 1vh">Legende</h5>
+        </div>
+        <table>
+          <tr>
+            <td>Lehre/Büro</td>
+          </tr>
+          <tr>
+            <td class="tabelleRot">Heimarbeit</td>
+          </tr>
+          <tr>
+            <td class="tabelleRot">Urlaub</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <hr />
+    <img
+      src="sachsen.png"
+      alt="Wappen von Sachsen"
+      style="max-width: 30px; vertical-align: middle"
+    />
+    <a href="http://www.ba-leipzig.de/" class="footerLinks"
+      >Staatliche Studienakademie Leipzig,
+    </a>
+    <a href="https://www.ba-leipzig.de/impressum-1" class="footerLinks"
+      >Impressum,
+    </a>
+    <a href="mailto:webmaster@ba-leipzig.de" class="footerLinks">Webmaster, </a>
+  </footer>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Simon Nikolaidis" />
+    <meta name="date" content="24.02.2022" />
+    <title>Anwesenheit Hauptberufliche Dozenten</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="nofollow"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <div class="container">
+    <header>
+      <img src="ba-leipzig.png" alt="Logo der Berufsakademie Sachsen" />
+      <h1>Anwesenheit Mitarbeiter</h1>
+    </header>
+    <body>
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-sm-3">
+              <button class="btn btn-outline-primary">zurück</button>
+            </div>
+            <div class="col-sm-6" style="text-align: center; font-weight: bold">
+              <p>04.01.2021 - 09.01.2021 (Kalenderwoche 1)</p>
+            </div>
+            <div class="col-sm-3" style="text-align: right">
+              <button class="btn btn-outline-primary">vor</button>
+            </div>
+          </div>
+          <table class="table table-bordered shadow-lg p-4 mt-3 mb-5 bg-white">
+            <tr>
+              <th>Dozent</th>
+              <th>Montag</th>
+              <th>Dienstag</th>
+              <th>Mittwoch</th>
+              <th>Donnerstag</th>
+              <th>Freitag</th>
+            </tr>
+            <tr>
+              <th>Herr Prof. Brunner</th>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td class="bg-danger text-white teaching" onClick="change(this);">
+                Heimarbeit
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+            </tr>
+            <tr>
+              <th>Frau Prof. Schneider</th>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td class="bg-danger text-white teaching" onClick="change(this);">
+                Urlaub
+              </td>
+              <td class="bg-danger text-white teaching" onClick="change(this);">
+                Urlaub
+              </td>
+            </tr>
+            <tr>
+              <th>Herr Prof. Siegmund</th>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+              <td
+                class="bg-success text-white teaching"
+                onClick="change(this);"
+              >
+                Lehre/Büro
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-header">
+              <h5>Legende</h5>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <tr>
+                  <td class="bg-success text-white">Lehre/Büro</td>
+                </tr>
+                <tr>
+                  <td class="bg-danger text-white">Heimarbeit</td>
+                </tr>
+                <tr>
+                  <td class="bg-danger text-white">Urlaub</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <footer>
+      <hr />
+      <img
+        src="sachsen.png"
+        alt="Wappen von Sachsen"
+        style="max-width: 30px; vertical-align: middle"
+      />
+      <a href="http://www.ba-leipzig.de/" class="footerLinks"
+        >Staatliche Studienakademie Leipzig,
+      </a>
+      <a href="https://www.ba-leipzig.de/impressum-1" class="footerLinks"
+        >Impressum,
+      </a>
+      <a href="mailto:webmaster@ba-leipzig.de" class="footerLinks"
+        >Webmaster
+      </a>
+    </footer>
+  </div>
+  <script src="logic.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="”anonymous”"
+  />
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  />
+</html>
